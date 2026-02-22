@@ -1,1 +1,24 @@
-﻿
+﻿Console.WriteLine("Ingrese el tipo de incidente (Número):");
+Console.WriteLine("");
+Console.WriteLine("1. Malware");
+Console.WriteLine("2. Phishing");
+Console.WriteLine("3. Acceso no autorizado");
+Console.WriteLine("4. Fuga de información");
+int tipoIncidente = int.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("Ingrese el activo afectado (Número): ");
+Console.WriteLine("");
+Console.WriteLine("1. PC");
+Console.WriteLine("2. Servidor");
+Console.WriteLine("3. Personales");
+Console.WriteLine("4. Red");
+int activoAfectado = int.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("Ingrese el tipo de dato que fue comprometido (Número): ");
+int tipoDatoComprometido = int.Parse(Console.ReadLine());
+Console.WriteLine("");
+Console.WriteLine("¿Hay persistencia? (S/N): ");
+string persistencia = Console.ReadLine();
+Console.WriteLine("");
+Console.WriteLine("Ingrese el número de usuarios afectado: ");
+int numeroUsuariosAfectados = int.Parse(Console.ReadLine());
