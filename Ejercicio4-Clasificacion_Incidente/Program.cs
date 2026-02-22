@@ -35,7 +35,28 @@ int numeroUsuariosAfectados = int.Parse(Console.ReadLine());
 
 if (tipoDatoComprometido>=1 && tipoDatoComprometido<=4 && (persistencia=="S" || persistencia=="N") && numeroUsuariosAfectados >= 0)
 {
+    switch(tipoIncidente)
+    {
+        case 1:
+            switch (activoAfectado)
+            {
 
+            }
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        case 4:
+            
+            break;
+
+        default:
+                        Console.WriteLine("Tipo de incidente no válido.");
+            break;
+    }
 }
 else
 {
