@@ -154,13 +154,352 @@ if (tipoDatoComprometido>=1 && tipoDatoComprometido<=4 && (persistencia=="S" || 
             }
             break;
         case 2:
-            
+            switch (activoAfectado)
+            {
+                case 1:
+                    if (numeroUsuariosAfectados < 100 || tipoDatoComprometido == 1)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (numeroUsuariosAfectados < 1000 || tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if ((numeroUsuariosAfectados < 5000 || tipoDatoComprometido == 3) && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if ((numeroUsuariosAfectados >= 5000 || tipoDatoComprometido == 3) && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 2:
+                    if (tipoDatoComprometido == 1)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 3 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (tipoDatoComprometido == 4 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 3:
+                    if (tipoDatoComprometido == 3)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (tipoDatoComprometido == 4)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 3 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (tipoDatoComprometido == 4 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 4:
+                    if (tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (numeroUsuariosAfectados < 1000)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 2 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (numeroUsuariosAfectados >= 1000 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Activo afectado no váido.");
+                    break;
+            }
             break;
         case 3:
-            
+            switch (activoAfectado)
+            {
+                case 1:
+                    if (numeroUsuariosAfectados < 100 || tipoDatoComprometido == 1)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (numeroUsuariosAfectados < 1000 || tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if ((numeroUsuariosAfectados < 5000 || tipoDatoComprometido == 3) && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if ((numeroUsuariosAfectados >= 5000 || tipoDatoComprometido == 3) && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 2:
+                    if (tipoDatoComprometido == 1)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 3 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (tipoDatoComprometido == 4 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 3:
+                    if (tipoDatoComprometido == 3)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (tipoDatoComprometido == 4)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 3 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (tipoDatoComprometido == 4 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 4:
+                    if (tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (numeroUsuariosAfectados < 1000)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 2 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (numeroUsuariosAfectados >= 1000 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Activo afectado no váido.");
+                    break;
+            }
             break;
         case 4:
-            
+            switch (activoAfectado)
+            {
+                case 1:
+                    if (numeroUsuariosAfectados < 100 || tipoDatoComprometido == 1)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (numeroUsuariosAfectados < 1000 || tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if ((numeroUsuariosAfectados < 5000 || tipoDatoComprometido == 3) && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if ((numeroUsuariosAfectados >= 5000 || tipoDatoComprometido == 3) && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 2:
+                    if (tipoDatoComprometido == 1)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 3 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (tipoDatoComprometido == 4 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 3:
+                    if (tipoDatoComprometido == 3)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (tipoDatoComprometido == 4)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 3 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (tipoDatoComprometido == 4 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                case 4:
+                    if (tipoDatoComprometido == 2)
+                    {
+                        Console.WriteLine("Serevidad: Baja");
+                        Console.WriteLine("Respuesta recomendada: Supervisión baja");
+                    }
+                    else if (numeroUsuariosAfectados < 1000)
+                    {
+                        Console.WriteLine("Serevidad: Media");
+                        Console.WriteLine("Respuesta recomendada: Supervisión media");
+                    }
+                    else if (tipoDatoComprometido == 2 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Alta");
+                        Console.WriteLine("Respuesta recomendada: Supervisión alta");
+                    }
+                    else if (numeroUsuariosAfectados >= 1000 && persistencia == "S")
+                    {
+                        Console.WriteLine("Serevidad: Crítica");
+                        Console.WriteLine("Respuesta recomendada: Supervisión inmediata y activación de protocolos de seguridad máxima");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error");
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Activo afectado no váido.");
+                    break;
+            }
             break;
 
         default:
