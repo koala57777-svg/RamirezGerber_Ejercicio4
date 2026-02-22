@@ -32,6 +32,7 @@ Console.WriteLine("");
 Console.WriteLine("Ingrese el número de usuarios afectado: ");
 Console.WriteLine("");
 int numeroUsuariosAfectados = int.Parse(Console.ReadLine());
+Console.WriteLine("");
 
 if (tipoDatoComprometido>=1 && tipoDatoComprometido<=4 && (persistencia=="S" || persistencia=="N") && numeroUsuariosAfectados >= 0)
 {
